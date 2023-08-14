@@ -15,7 +15,7 @@ public class QuickSort {
         quickSortRecursive(nums, 0, nums.length - 1);
         return nums;
     }
-    public static void quickSortRecursive(int[] arr, int left, int right) {
+    private static void quickSortRecursive(int[] arr, int left, int right) {
         if (left >= right) {
             return;
         }

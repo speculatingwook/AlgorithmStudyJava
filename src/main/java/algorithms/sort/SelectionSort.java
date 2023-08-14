@@ -1,7 +1,14 @@
 package algorithms.sort;
 
+/**
+ * 선택 정렬 알고리즘
+ * | 평균 수행 시간: O(N^2)
+ * | 최악 수행 시간: O(N^2)
+ * | 메모리: O(1)
+ * | 안정성: X
+ */
 public class SelectionSort {
-    public static void selectionSort(int[] arr) {
+    public static int[] selectionSort(int[] arr) {
         int n = arr.length;
 
         // 배열의 모든 요소를 반복하면서 선택 정렬 수행
@@ -21,5 +28,6 @@ public class SelectionSort {
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
         }
+        return arr;
     }
 }

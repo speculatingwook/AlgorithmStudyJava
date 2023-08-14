@@ -3,7 +3,7 @@ package algorithms.sort;
  * 삽입 정렬 알고리즘
  * | 평균 수행 시간: O(N^2)
  * | 최악 수행 시간: O(N^2)
- * | 메모리: O(1)
+ * | 메모리(공간 복잡도): O(1)
  * | 안정성: O
  */
 public class InsertionSort {

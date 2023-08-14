@@ -2,6 +2,7 @@ package sort;
 
 import algorithms.sort.BubbleSort;
 import algorithms.sort.InsertionSort;
+import algorithms.sort.QuickSort;
 import algorithms.sort.SelectionSort;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -42,6 +43,15 @@ public class SortTest {
         int [] test2 = arr2.clone();
         assertThat(InsertionSort.insertionSort(test1)).isEqualTo(expected);
         assertThat(InsertionSort.insertionSort(test2)).isEqualTo(expected2);
+    }
+
+    @DisplayName("[퀵 정렬] 정렬된 배열이 올바르게 반환되어야 한다.")
+    @Test
+    void testQuickSort() {
+        int [] test1 =  arr.clone();
+        int [] test2 = arr2.clone();
+        assertThat(QuickSort.quickSort(test1)).isEqualTo(expected);
+        assertThat(QuickSort.quickSort(test2)).isEqualTo(expected2);
     }
 
 }

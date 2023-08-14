@@ -1,5 +1,7 @@
-package algorithms.sort;
+package sort;
 
+import algorithms.sort.BubbleSort;
+import algorithms.sort.SelectionSort;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
